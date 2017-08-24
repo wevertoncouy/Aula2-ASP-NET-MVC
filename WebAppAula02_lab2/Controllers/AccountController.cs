@@ -15,6 +15,8 @@ namespace WebAppAula02_lab2.Controllers
     [Authorize]
     public class AccountController : Controller
     {
+
+
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
@@ -23,7 +25,7 @@ namespace WebAppAula02_lab2.Controllers
         }
 
         public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
-        {
+        { 
             UserManager = userManager;
             SignInManager = signInManager;
         }
